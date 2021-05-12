@@ -9,8 +9,8 @@ import {routing} from "../app.routing";
     templateUrl: "store.component.html"
 })
 
-export class StoreComponent {
-    public selectedCategory = null;
+export class VendorProfileComponent {
+    public selectedCustomer = null;
     public vendorsPerPage = 4;
     public selectedPage = 1;
 

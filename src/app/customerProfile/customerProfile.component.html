@@ -1,0 +1,42 @@
+<div class="container-fluid">
+    <h1>Create Customer Profile</h1>
+</div>
+
+<form novalidate #form="ngForm" (ngSubmit)="submitProfile(profile)" (reset)="resetForm()">
+
+    <div class="form-group">
+        <label for="businessName">Your Business Name</label>
+
+        <input type="text" id="businessName" name="businessName" [(ngModel)]="vendor.vendorName" required>
+    </div>
+
+    <div class="form-group">
+        <label for="businessService">Your Business Service</label>
+
+        <input type="text" id="businessService" name="businessService" [(ngModel)]="vendor.vendorService" required>
+    </div>
+
+    <div class="form-group">
+        <label for="businessCategory">Your Business Service</label>
+
+        <input type="text" id="businessCategory" name="businessCategory" [(ngModel)]="vendor.vendorCategory" required>
+    </div>
+
+    <div class="form-group">
+        <label for="businessService">Your Business Service</label>
+
+        <input type="text" id="businessService" name="businessService" [(ngModel)]="vendor.vendorService" required>
+    </div>
+
+    <div class="form-group">
+        <label for="businessService">Your Business Service</label>
+
+        <input type="text" id="businessService" name="businessService" [(ngModel)]="vendor.vendorService" required>
+    </div>
+
+    <div class="form-group">
+        <label for="profilepic">Upload a Profile Picture</label>
+
+        <input type="file" id="profilepic" name="profilepic" accept="image/png, image/jpeg" [(ngModel)]="vendor.image">
+    </div>
+</form>

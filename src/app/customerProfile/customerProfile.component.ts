@@ -9,15 +9,15 @@ import {routing} from "../app.routing";
     templateUrl: "store.component.html"
 })
 
-export class StoreComponent {
-    public selectedCategory = null;
+export class CustomerProfileComponent {
+    public selectedCustomer = null;
     public vendorsPerPage = 4;
     public selectedPage = 1;
 
 
     constructor(private repository: VendorRepository, private cart: Cart) { }
 
-    get vendors(): Vendor[] {
+    get customers(): Vendor[] {
         let pageIndex = (this.selectedPage - 1) * this.vendorsPerPage
         return this.repository.getVendors(this.selectedCategory).slice(pageIndex, pageIndex + this.vendorsPerPage);
     }
